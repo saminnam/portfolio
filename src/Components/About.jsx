@@ -1,4 +1,5 @@
 import React from "react";
+import cv from '../assets/cv.pdf';
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
               Adobe XD and Figma to craft engaging interfaces. My goal is to
               enhance the user experience through thoughtful design choices.
             </p>
-            <button class="btn_download w-48 rounded-md px-4 py-3 text-center font-semibold">
+            <a href={cv} class="btn_download w-48 rounded-md px-4 py-3 text-center font-semibold">
               <svg
                 stroke-linejoin="round"
                 stroke-linecap="round"
@@ -39,7 +40,7 @@ const About = () => {
                 <path d="M12 4l0 12"></path>
               </svg>
               <span class="button__text">Download CV</span>
-            </button>
+            </a>
             {/* Divider */} <div className="my-8 h-px w-full bg-black"></div>
             {/* Testimonials */}
             <div className="grid gap-8 md:grid-cols-3 md:gap-4">
