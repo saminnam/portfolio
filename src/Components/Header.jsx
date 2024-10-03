@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <section
-        className="z-50 bg-black text-white transition-shadow duration-300"
+        className="z-50 absolute top-0 inset-x-0 text-white transition-shadow duration-300"
       >
         <nav className="font-inter mx-auto h-auto w-full max-w-screen-2xl lg:relative lg:top-0 bg-transparent">
           <div className="flex flex-col px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-20 lg:py-4">
