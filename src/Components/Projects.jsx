@@ -168,7 +168,7 @@ const Projects = () => {
                   </div>
                 </a>
                 <a
-                  href="https://keyantech.netlify.app"
+                  href="https://keyantechnologies.netlify.app"
                   className="flex max-w-full flex-col gap-4 rounded-md px-4 md:px-2"
                   data-aos="zoom-out-up"
                   data-aos-duration="2000"
