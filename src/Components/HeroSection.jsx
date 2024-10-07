@@ -27,11 +27,11 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-slate-950 opacity-50"></div>
 
       {/* Content on top of video */}
-      <div className="relative z-10 w-full py-32 max-w-7xl mx-auto">
+      <div className="z-10 w-full py-32 pt-40 max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-white" data-aos="fade-up">
             <h1 className="text-[60px] font-serif">Mr: Innamul Hasan</h1>
-            <h1 className="text-[60px] font-serif">
+            <h1 className="lg:text-[60px] font-serif text-[40px]">
               <TypeAnimation
                 sequence={[
                   "Front-End Developer",
