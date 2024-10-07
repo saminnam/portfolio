@@ -2,7 +2,7 @@ import React from "react";
 
 const MediaIcons = () => {
   return (
-    <div>
+    <div className="lg:flex hidden">
       <div class="card">
         <ul>
           <li class="iso-pro">
