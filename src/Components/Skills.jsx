@@ -9,7 +9,7 @@ const Skills = () => {
       <h2 className="text-center text-3xl font-bold md:text-5xl font-serif">
           Skills
         </h2>
-        {/* <div className="w-[100px] mt-1 h-[5px] left-[550px] top-[200px] absolute bg-[#2cd5ef] rounded"></div> */}
+        {/* <div className="w-[100px] mt-1 h-[5px] up-[550px] top-[200px] absolute bg-[#2cd5ef] rounded"></div> */}
         <p className="msm:text-base mb-8 mt-4 text-center text-sm text-gray-500 md:mb-12 lg:mb-16 font-serif">
           Maintaining best professional skills forever.
         </p>
@@ -28,7 +28,7 @@ const Skills = () => {
           </div>
           {/* List */}
           <ul className="grid max-w-2xl grid-cols-2 sm:gap-5 lg:max-w-none">
-            <li className="flex flex-col p-5 education_card" data-aos="fade-left">
+            <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
                 src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
                 alt="htmllogo"
@@ -39,7 +39,7 @@ const Skills = () => {
               I have 1.5 years of experience in HTML and the ability to handle highly critical content structures easily.
               </p>
             </li>
-            <li className="flex flex-col p-5 education_card" data-aos="fade-left">
+            <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
                 src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
                 alt="csslogo"
@@ -51,7 +51,7 @@ const Skills = () => {
                 all types of styles with the animations efficiently for responsive design.
               </p>
             </li>
-            <li className="flex flex-col p-5 education_card" data-aos="fade-left">
+            <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
                 src="https://th.bing.com/th/id/OIP.6eJAwKYo65W5WIqe3MQl6wHaHa?rs=1&pid=ImgDetMain"
                 alt="javascriptlogo"
@@ -62,7 +62,7 @@ const Skills = () => {
               I have 6 months of experience in JavaScript and have been using main concepts in many projects.
               </p>
             </li>
-            <li className="flex flex-col p-5 education_card" data-aos="fade-left">
+            <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
                 src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png"
                 alt="reactlogo"
@@ -73,7 +73,7 @@ const Skills = () => {
               I have 6 months of experience in React Js and have been using hooks concepts in many projects.
               </p>
             </li>
-            <li className="flex flex-col p-5 education_card" data-aos="fade-left">
+            <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
                 src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png"
                 alt="bootstraplogo"
@@ -84,7 +84,7 @@ const Skills = () => {
               I have 6 months of experience in Bootstrap and the ability to handle Bootstrap classes efficiently for responsive design.
               </p>
             </li>
-            <li className="flex flex-col p-5 education_card" data-aos="fade-left">
+            <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
                 src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png"
                 alt="tailwindlogo"
