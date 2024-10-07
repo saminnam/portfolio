@@ -44,7 +44,7 @@ const Projects = () => {
                     : "text-gray-500"
                 }`}
               >
-                Client's Porject's
+                Client's Project's
               </div>
             </div>
           </div>
