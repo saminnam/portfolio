@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
         {/* Component */}
         <div className="flex-col flex items-center">
-          <a href="#" className="mb-8 inline-block max-w-full text-black">
+          <a href="/" className="mb-8 inline-block max-w-full text-black">
             <img
               src="https://katharinehansenphd.com/wp-content/uploads/2013/02/portfolio.png"
               alt="logo"
@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
           <div className="text-center font-semibold">
             <a
-              href="#home"
+              href="/"
               className="inline-block px-6 py-2 font-bold text-black transition hover:text-blue-700"
             >
               Home
