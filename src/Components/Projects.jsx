@@ -120,7 +120,7 @@ const Projects = () => {
                     className="max-h-64 w-full object-cover rounded-t-lg"
                   />
                   <div className="px-5 py-8 sm:px-6">
-                    <h5 className="mb-3 d-xl font-bold">Food-order website</h5>
+                    <h5 className="mb-3 d-xl font-bold">Food-Order Website</h5>
                     <p className="flex-col d-gray-500">
                       {" "}
                       Developed a Food-Order website that allows users to browse
