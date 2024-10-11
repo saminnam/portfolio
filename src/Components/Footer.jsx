@@ -1,5 +1,6 @@
 import React from "react";
-import portfolio_logo from '../assets/portfolio_logo.png';
+import portfolio_logo from "../assets/portfolio_logo.png";
+import MediaIcons from "./MediaIcons";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
         {/* Component */}
         <div className="flex-col flex items-center">
-          <a href="/" className="mb-8 inline-block max-w-full text-black">
+          <a href="#" className="mb-8 inline-block max-w-full text-black">
             <img
               src="https://katharinehansenphd.com/wp-content/uploads/2013/02/portfolio.png"
               alt="logo"
@@ -17,7 +18,7 @@ const Footer = () => {
           </a>
           <div className="text-center font-semibold">
             <a
-              href="/"
+              href="#home"
               className="inline-block px-6 py-2 font-bold text-black transition hover:text-blue-700"
             >
               Home
@@ -49,46 +50,46 @@ const Footer = () => {
           </div>
           <div className="mb-8 mt-8 border-b border-gray-300 w-48"></div>
           <div className="mb-12 grid-cols-4 grid-flow-col grid w-full max-w-52 gap-3">
-            <a
-              href="https://in.linkedin.com/"
-              className="mx-auto flex-col flex max-w-6 items-center justify-center text-black"
-            >
-              <img
-                src="https://clipground.com/images/linkedin-logo-svg-4.png"
-                alt="linkedin"
-                className="inline-block"
-              />
-            </a>
-            <a
-              href="https://github.com/saminnam"
-              className="mx-auto flex-col flex max-w-6 items-center justify-center text-black"
-            >
-              <img
-                src="https://pngimg.com/uploads/github/github_PNG80.png"
-                alt="git"
-                className="inline-block"
-              />
-            </a>
-            <a
-              href="https://facebook.com"
-              className="mx-auto flex-col flex max-w-6 items-center justify-center text-black"
-            >
-              <img
-                src="https://th.bing.com/th/id/OIP.fIIsn9ABgJ5NezP43m5LTwHaHa?rs=1&pid=ImgDetMain"
-                alt="facebook"
-                className="inline-block"
-              />
-            </a>
-            <a
-              href="https://instagram.com"
-              className="mx-auto flex-col flex max-w-6 items-center justify-center text-black"
-            >
-              <img
-                src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png"
-                alt="insta"
-                className="inline-block"
-              />
-            </a>
+            <div className="flex items-center">
+              <div className="mr-4 w-10 border-t border-white"></div>
+              <a
+                href="https://www.linkedin.com/in/innamul-hasan-8663b82b8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-4 inline-block border-2 w-auto h-auto py-1 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
+                aria-label="LinkedIn"
+              >
+                <i className="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/sam_innam/?__pwa=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-4 inline-block border-2 w-auto h-auto py-2 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
+                aria-label="Instagram"
+              >
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/918608373370"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-4 inline-block border-2 w-auto h-auto py-2 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
+                aria-label="WhatsApp"
+              >
+                <i className="bi bi-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://github.com/saminnam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-4 inline-block border-2 w-auto h-auto py-1 px-2 rounded-lg hover:bg-blue-800  hover:border-customPurple hover:text-white transition ease-in-out"
+                aria-label="Facebook"
+              >
+                <i className="bi bi-github"></i>
+              </a>
+            </div>
           </div>
           <p className="text-sm sm:text-base">
             © Copyright 2024. All rights reserved.
