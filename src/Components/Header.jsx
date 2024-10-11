@@ -68,7 +68,7 @@ const Header = () => {
 
             {/* Mobile menu toggle */}
             <button
-              className="absolute right-5 lg:hidden"
+              className="absolute right-5 lg:hidden bg-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle mobile menu"
             >
