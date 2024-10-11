@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS
 import bck from '../assets/bck_v1.mp4';
+import MediaIcons from "./MediaIcons";
 
 const HeroSection = () => {
   useEffect(() => {
@@ -30,16 +31,16 @@ const HeroSection = () => {
       <div className="z-10 w-full py-32 pt-40 max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-white" data-aos="fade-up">
-            <h1 className="text-[60px] font-serif">Mr: Innamul Hasan</h1>
+            <h1 className="text-[50px] font-serif">Mr: Innamul Hasan</h1>
             <h1 className="lg:text-[60px] font-serif text-[40px]">
               <TypeAnimation
                 sequence={[
                   "Front-End Developer",
-                  1000,
+                  2000,
                   "Java Full Stack Developer",
-                  1000,
+                  2000,
                   "UI Web Designer",
-                  1000,
+                  2000,
                 ]}
                 wrapper="span"
                 speed={10}
@@ -52,6 +53,7 @@ const HeroSection = () => {
               React, JavaScript, and CSS. My focus is on creating responsive and
               optimized interfaces that enhance user experience.
             </p>
+            <MediaIcons />
           </div>
 
           <div className="w-[400px] h-[450px] flex items-center justify-center">
