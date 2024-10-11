@@ -1,17 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import portfolio_logo from "../assets/portfolio.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsScrolled(true); // Change background when you scroll past the first section
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <section
-        className="z-50 absolute top-0 inset-x-0 text-white transition-shadow duration-300"
+        className={`z-50 fixed top-0 inset-x-0 text-white transition-shadow duration-300 ${
+          isScrolled ? "bg-black" : "bg-transparent"
+        }`}
       >
-        <nav className="font-inter mx-auto h-auto w-full max-w-screen-2xl lg:relative lg:top-0 bg-transparent">
+        <nav className="font-inter mx-auto h-auto w-full max-w-screen-2xl lg:relative lg:top-0">
           <div className="flex flex-col px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-20 lg:py-4">
             <a href="#">
-              <img src={portfolio_logo} alt="" width={200}/>
+              <img src={portfolio_logo} alt="" width={200} />
             </a>
             <div className="hidden lg:flex lg:flex-row lg:space-x-6">
               <a
@@ -28,7 +48,7 @@ const Header = () => {
               </a>
               <a
                 href="#skills"
-                className="font-inter font-medium text-white  rounded-lg px-3 py-4 hover:text-blue-500"
+                className="font-inter font-medium text-white rounded-lg px-3 py-4 hover:text-blue-500"
               >
                 SKILLS
               </a>
@@ -91,16 +111,28 @@ const Header = () => {
               <a href="/" className="font-inter px-4 py-2 hover:text-blue-600">
                 HOME
               </a>
-              <a href="#about" className="font-inter px-4 py-2 hover:text-blue-600">
+              <a
+                href="#about"
+                className="font-inter px-4 py-2 hover:text-blue-600"
+              >
                 ABOUT
               </a>
-              <a href="#skills" className="font-inter px-4 py-2 hover:text-blue-600">
+              <a
+                href="#skills"
+                className="font-inter px-4 py-2 hover:text-blue-600"
+              >
                 SERVICES
               </a>
-              <a href="#projects" className="font-inter px-4 py-2 hover:text-blue-600">
+              <a
+                href="#projects"
+                className="font-inter px-4 py-2 hover:text-blue-600"
+              >
                 PROJECTS
               </a>
-              <a href="#contact" className="font-inter px-4 py-2 hover:text-blue-600">
+              <a
+                href="#contact"
+                className="font-inter px-4 py-2 hover:text-blue-600"
+              >
                 CONTACT
               </a>
             </div>
