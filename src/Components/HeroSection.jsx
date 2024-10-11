@@ -12,7 +12,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="#" className="relative w-full h-screen overflow-hidden">
+    <section id="#" className="relative w-full h-screen overflow-hidden p-7">
       {/* Background Video */}
       <video
         autoPlay
@@ -29,15 +29,15 @@ const HeroSection = () => {
 
       {/* Content on top of video */}
       <div className="z-10 w-full py-32 pt-40 max-w-7xl mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-wrap justify-center gap-8 lg:justify-between items-center">
           <div className="text-white" data-aos="fade-up">
-            <h1 className="text-[50px] font-serif">Mr: Innamul Hasan</h1>
-            <h1 className="lg:text-[60px] font-serif text-[40px]">
+            <h1 className="lg:text-[50px] text-[30px] font-serif">Mr: Innamul Hasan</h1>
+            <h1 className="lg:text-[60px] font-serif text-[32px]">
               <TypeAnimation
                 sequence={[
                   "Front-End Developer",
                   2000,
-                  "Java Full Stack Developer",
+                  "Java Developer",
                   2000,
                   "UI Web Designer",
                   2000,
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 repeat={Infinity}
               />
             </h1>
-            <p className="w-[560px] font-mono text-justify mt-5">
+            <p className="lg:w-[560px] w-full font-mono text-justify mt-5">
               As a Front-End Developer, I specialize in building interactive,
               user-friendly web applications using modern technologies like
               React, JavaScript, and CSS. My focus is on creating responsive and
@@ -56,7 +56,7 @@ const HeroSection = () => {
             <MediaIcons />
           </div>
 
-          <div className="w-[400px] h-[450px] flex items-center justify-center">
+          <div className="lg:w-[400px] lg:h-[450px] w-[300px] h-[250px] flex items-center justify-center">
             <div className="container noselect z-0">
               <div className="canvas">
                 {/* Your animated tracker divs */}
