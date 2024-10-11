@@ -175,7 +175,7 @@ const Contact = () => {
                 </div>
                 <input
                   type="submit"
-                  value="Get free quote"
+                  value="Send"
                   className="inline-block w-full cursor-pointer rounded-md bg-blue-950 px-6 py-3 text-center text-white"
                 />
               </form>
