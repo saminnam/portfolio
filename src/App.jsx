@@ -7,7 +7,6 @@ import Footer from "./Components/Footer";
 import Projects from "./Components/Projects";
 import AOS from "aos";
 import Contact from "./Components/Contact";
-import MediaIcons from "./Components/MediaIcons";
 import Services from "./Components/Services";
 
 const App = () => {
@@ -53,7 +52,6 @@ const App = () => {
           <Services />
           <Contact />
           <Footer />
-          <MediaIcons />
         </div>
       )}
     </>
