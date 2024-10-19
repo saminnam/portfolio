@@ -471,7 +471,7 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
                       <a
-                        href="https://brindhavanam-hostel.netlify.app"
+                        href="brindhavanamhostels.com"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
