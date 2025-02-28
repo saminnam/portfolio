@@ -15,18 +15,18 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of animations
-      easing: "ease-in-out", // Easing function
-      once: true, // Whether animation should happen only once
+      duration: 1000, 
+      easing: "ease-in-out",
+      once: true, 
     });
 
-    loadingCaller(); // Call the function when component mounts
+    loadingCaller();
   }, []);
 
   function loadingCaller() {
-    setLoader(true); // Initially set loader to true
+    setLoader(true);
     setInterval(() => {
-      setLoader(false); // After 4 seconds, hide the loader
+      setLoader(false); 
     }, 4000);
   }
 
