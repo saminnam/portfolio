@@ -850,7 +850,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <div
+                {/* <div
                   className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -1028,7 +1028,7 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </>
             )}
           </div>
