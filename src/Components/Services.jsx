@@ -28,7 +28,7 @@ const Services = () => {
   ];
 
   return (
-    <section>
+    <section className="bg-gray-50">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Title */}
@@ -51,7 +51,7 @@ const Services = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="grid gap-6 group cursor-pointer rounded-md border border-solid border-gray-300 p-8 md:p-10 hover:border-blue-700"
+              className="grid gap-6 bg-white group cursor-pointer rounded-md border border-solid border-gray-300 p-8 md:p-10 hover:border-blue-700"
               data-aos="fade-up"
             >
               <img

@@ -8,11 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setIsScrolled(true); // Change background when you scroll past the first section
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -75,7 +71,7 @@ const Header = () => {
             </button>
 
             <div
-              className={`lg:hidden flex flex-col items-center justify-center text-black gap-3 bg-white w-full h-auto py-7 fixed top-16 left-0 transition-transform duration-500 ${
+              className={`lg:hidden flex flex-col justify-center text-white gap-3 bg-black w-full h-auto py-7 fixed top-24 left-0 transition-transform duration-500 ${
                 isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >

@@ -39,12 +39,12 @@ const Projects = () => {
             <p className="mx-auto mt-4 text-gray-500">
               Get inspired by design and websites
             </p>
-            <div className="relative mx-auto gap-3 flex-col md:flex-row mt-8 flex w-fit cursor-pointer roundetext-xl bg-gray-100 md:mt-12">
+            <div className="relative mx-auto gap-3 flex-col md:flex-row mt-8 flex w-fit cursor-pointer roundetext-xl md:mt-12">
               <div
                 onClick={() => setActive("Own Portfolios")}
-                className={`relative rounded px-5 py-2 transition-all duration-2000 ${
+                className={`relative px-5 py-2 transition-all duration-2000 ${
                   active === "Own Portfolios"
-                    ? "border-y-2 border-blue-800"
+                    ? "border-e-2 border-b-2 shadow-lg border-blue-800"
                     : "text-gray-500"
                 }`}
               >
@@ -52,9 +52,9 @@ const Projects = () => {
               </div>
               <div
                 onClick={() => setActive("Company Portfolios")}
-                className={`relative rounded px-5 py-2 transition-all duration-2000 ${
+                className={`relative px-5 py-2 transition-all duration-2000 ${
                   active === "Company Portfolios"
-                    ? "border-y-2 border-blue-800"
+                    ? "border-e-2 border-b-2 shadow-lg border-blue-800"
                     : "text-gray-500"
                 }`}
               >
@@ -62,12 +62,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center group gap-5">
+          <div className="grid md:grid-cols-2 grid-cols-1 mt-10 lg:grid-cols-3 items-center lg:gap-16 md:gap-10 justify-center group">
             {active === "Own Portfolios" && (
               <>
                 {/* Own Portfolios Items */}
                 <div
-                  className="mb-12 md:w-[400px] w-full border border-solid hover:shadow-xl rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full border border-solid hover:shadow-xl rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -104,7 +104,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -112,7 +112,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border rounded-lg border-solid border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border rounded-lg border-solid border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -151,7 +151,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -159,7 +159,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -199,7 +199,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -207,7 +207,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -244,7 +244,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -252,7 +252,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -290,7 +290,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -298,7 +298,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -338,7 +338,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -346,7 +346,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -385,7 +385,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -393,7 +393,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -430,7 +430,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -438,7 +438,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -475,7 +475,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -483,7 +483,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  border border-solid hover:shadow-xl rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  border border-solid hover:shadow-xl rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -520,7 +520,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -528,7 +528,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -567,7 +567,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -575,7 +575,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -611,7 +611,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -619,7 +619,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -654,7 +654,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -668,7 +668,7 @@ const Projects = () => {
               <>
                 {/* Company Portfolios Items */}
                 <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -698,22 +698,22 @@ const Projects = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
-                      {/* <a
+                      <a
                         href="https://www.brindhavanamhostels.com/"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
-                      </a> */}
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div
-                  className="mb-12 md:w-[400px] w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 md:w-[400px] h-full w-full  hover:shadow-xl border border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -752,7 +752,7 @@ const Projects = () => {
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -760,7 +760,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -791,13 +791,13 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
                       <a
-                        href="https://www.brindhavanamhostels.com/"
+                        href="https://admin-access-hostel.netlify.app/login"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -805,7 +805,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -837,21 +837,21 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
                       <a
-                        href="https://www.brindhavanamhostels.com/"
+                        href="keyan-dashboard.netlify.app"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
                     </div>
                   </div>
                 </div>
-                {/* <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                <div
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -881,13 +881,13 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
                       <a
-                        href="https://www.brindhavanamhostels.com/"
+                        href="https://royalciviltech.com/"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -895,7 +895,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -927,13 +927,13 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
                       <a
-                        href="esh-pro.netlify.app"
+                        href="https://eshwarconstruction.in/"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
@@ -941,7 +941,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -970,22 +970,22 @@ const Projects = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
-                      <a
+                      {/* <a
                         href="https://www.brindhavanamhostels.com/"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT WEBSITE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
                 <div
-                  className="mb-12 border md:w-[400px] w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
+                  className="mb-12 border md:w-[400px] h-full w-full  hover:shadow-xl border-solid rounded-lg border-gray-300 md:mb-8 lg:mb-10"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -1016,19 +1016,19 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
                       <a
-                        href="ocean-landpg.netlify.app"
+                        href="https://ocean-landpg.netlify.app/"
                         className="r flex max-w-full gap-2.5 text-sm font-bold uppercase text-black"
                       >
                         <p>VISIT LANDING PAGE</p>
                         <img
                           src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b636d7c440a74b4076b278_button-link.svg"
-                          alt=""
+                          alt="arrow-img"
                           className="inline-block"
                         />
                       </a>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </>
             )}
           </div>

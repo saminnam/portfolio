@@ -1,16 +1,17 @@
 const Footer = () => {
   return (
-    <footer className="block">
+    <footer className="block bg-[#9a9ba430]">
       {/* Container */}
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
         {/* Component */}
         <div className="flex-col flex items-center">
           <a href="#" className="mb-8 inline-block max-w-full text-black">
-            <img
+            <h2 className="font-bold text-4xl">Innamul Hasan. Y</h2>
+            {/* <img
               src="https://katharinehansenphd.com/wp-content/uploads/2013/02/portfolio.png"
               alt="logo"
               className="inline-block max-h-10"
-            />
+            /> */}
           </a>
           <div className="text-center font-semibold">
             <a
@@ -44,7 +45,7 @@ const Footer = () => {
               Contact
             </a>
           </div>
-          <div className="mb-8 mt-8 border-b border-gray-300 w-48"></div>
+          <div className="mb-8 mt-4 border-b border-gray-300 w-48"></div>
           <div className="mb-12 grid-cols-4 grid-flow-col grid w-full max-w-52 gap-3">
             <div className="flex items-center">
               <div className="mr-4 w-10 border-t border-white"></div>
@@ -52,7 +53,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/innamul-hasan-8663b82b8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4 inline-block border-2 w-auto h-auto py-1 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
+                className="mr-4 inline-block border-2 border-gray-300 w-auto h-auto py-1 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
                 aria-label="LinkedIn"
               >
                 <i className="bi bi-linkedin"></i>
@@ -61,7 +62,7 @@ const Footer = () => {
                 href="https://www.instagram.com/sam_innam/?__pwa=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4 inline-block border-2 w-auto h-auto py-2 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
+                className="mr-4 inline-block border-2 border-gray-300 w-auto h-auto py-2 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
                 aria-label="Instagram"
               >
                 <i className="bi bi-instagram"></i>
@@ -70,7 +71,7 @@ const Footer = () => {
                 href="https://wa.me/918608373370"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4 inline-block border-2 w-auto h-auto py-2 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
+                className="mr-4 inline-block border-2 border-gray-300 w-auto h-auto py-2 px-2 rounded-lg hover:bg-blue-800 hover:border-customPurple hover:text-white transition ease-in-out"
                 aria-label="WhatsApp"
               >
                 <i className="bi bi-whatsapp"></i>
@@ -80,7 +81,7 @@ const Footer = () => {
                 href="https://github.com/saminnam"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4 inline-block border-2 w-auto h-auto py-1 px-2 rounded-lg hover:bg-blue-800  hover:border-customPurple hover:text-white transition ease-in-out"
+                className="mr-4 inline-block border-2 border-gray-300 w-auto h-auto py-1 px-2 rounded-lg hover:bg-blue-800  hover:border-customPurple hover:text-white transition ease-in-out"
                 aria-label="Facebook"
               >
                 <i className="bi bi-github"></i>

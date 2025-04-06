@@ -11,12 +11,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="#" className="relative w-full  h-lvh overflow-hidden p-7">
+    <section id="#" className="relative w-full h-[900px] md:h-lvh overflow-hidden p-7">
       <video
         autoPlay
         muted
         loop
-        className="absolute top-0 left-0 w-full h-lvh object-cover"
+        className="absolute top-0 left-0 w-full h-[900px] md:h-lvh object-cover"
       >
         <source src={bck} type="video/mp4" />
         Your browser does not support the video tag.

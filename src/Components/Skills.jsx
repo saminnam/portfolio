@@ -6,6 +6,7 @@ import logo4 from "../assets/react-logo.webp";
 import logo5 from "../assets/bootstrap-logo.png";
 import logo6 from "../assets/tailwind-logo.png";
 import logo7 from "../assets/grid-logo.png";
+import logo8 from "../assets/redux-logo.svg";
 
 const Skills = () => {
   return (
@@ -42,7 +43,7 @@ const Skills = () => {
               />
               <p className="mb-4 font-semibold">HTML 5</p>
               <p className="text-sm text-gray-500">
-                I have 1.5 years of experience in HTML and the ability to handle
+                I have 1+ years of experience in HTML and the ability to handle
                 highly critical content structures easily.
               </p>
             </li>
@@ -54,7 +55,7 @@ const Skills = () => {
               />
               <p className="mb-4 font-semibold">CSS 3</p>
               <p className="text-sm text-gray-500">
-                I have 1.5 years of experience in CSS and the ability to handle
+                I have 1+ years of experience in CSS and the ability to handle
                 all types of styles with the animations efficiently for
                 responsive design.
               </p>
@@ -67,7 +68,7 @@ const Skills = () => {
               />
               <p className="mb-4 font-semibold">JAVASCRIPT</p>
               <p className="text-sm text-gray-500">
-                I have 6 months of experience in JavaScript and have been using
+                I have 1+ years of experience in JavaScript and have been using
                 main concepts in many projects.
               </p>
             </li>
@@ -79,7 +80,7 @@ const Skills = () => {
               />
               <p className="mb-4 font-semibold">REACT JS</p>
               <p className="text-sm text-gray-500">
-                I have 6 months of experience in React Js and have been using
+                I have 1+ years of experience in React Js and have been using
                 hooks concepts in many projects.
               </p>
             </li>
@@ -91,7 +92,7 @@ const Skills = () => {
               />
               <p className="mb-4 font-semibold">BOOTSTRAP</p>
               <p className="text-sm text-gray-500">
-                I have 6 months of experience in Bootstrap and the ability to
+                I have 1+ years of experience in Bootstrap and the ability to
                 handle Bootstrap classes efficiently for responsive design.
               </p>
             </li>
@@ -103,7 +104,7 @@ const Skills = () => {
               />
               <p className="mb-4 font-semibold">TAILWIND</p>
               <p className="text-sm text-gray-500">
-                I have 6 months of experience in Tailwind and the ability to
+                I have 1+ years of experience in Tailwind and the ability to
                 handle Tailwind classes efficiently for responsive design.
               </p>
             </li>
@@ -120,13 +121,13 @@ const Skills = () => {
             </li>
             <li className="flex flex-col p-5 education_card" data-aos="fade-up">
               <img
-                src="https://www.svgrepo.com/show/303557/redux-logo.svg"
+                src={logo8}
                 alt="reduxlogo"
                 className="mb-4 object-cover inline-block h-10 w-10 rounded-full"
               />
               <p className="mb-4 font-semibold">REDUX</p>
               <p className="text-sm text-gray-500">
-                I'm currently learning redux to implement in future projects.
+              I have 1+ years of experience in Redux state management.
               </p>
             </li>
           </ul>
