@@ -1,0 +1,444 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+body {
+  overflow-x: hidden;
+}
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #00f;
+}
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00f;
+}
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.container:active {
+  width: 180px;
+  height: 245px;
+}
+#card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.7s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../src/assets/innamImg.jpg);
+}
+#prompt {
+  bottom: 8px;
+  left: 12px;
+  z-index: 20;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s ease-in-out-out;
+  position: absolute;
+  max-width: 110px;
+  color: #fff;
+}
+.tracker {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+.tracker:hover {
+  cursor: pointer;
+}
+.tracker:hover ~ #card #prompt {
+  opacity: 0;
+}
+.tracker:hover ~ #card {
+  transition: 0.3s;
+  filter: brightness(1.1);
+}
+.container:hover #card::before {
+  transition: 0.2s;
+  content: "";
+  opacity: 80%;
+}
+.canvas {
+  perspective: 800px;
+  inset: 0;
+  z-index: 200;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5" "tr-6 tr-7 tr-8 tr-9 tr-10" "tr-11 tr-12 tr-13 tr-14 tr-15" "tr-16 tr-17 tr-18 tr-19 tr-20" "tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+#card::before {
+  content: "";
+  filter: blur(2rem);
+  opacity: 30%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transition: 0.2s;
+}
+.tr-1 {
+  grid-area: tr-1;
+}
+.tr-2 {
+  grid-area: tr-2;
+}
+.tr-3 {
+  grid-area: tr-3;
+}
+.tr-4 {
+  grid-area: tr-4;
+}
+.tr-5 {
+  grid-area: tr-5;
+}
+.tr-6 {
+  grid-area: tr-6;
+}
+.tr-7 {
+  grid-area: tr-7;
+}
+.tr-8 {
+  grid-area: tr-8;
+}
+.tr-9 {
+  grid-area: tr-9;
+}
+.tr-10 {
+  grid-area: tr-10;
+}
+.tr-11 {
+  grid-area: tr-11;
+}
+.tr-12 {
+  grid-area: tr-12;
+}
+.tr-13 {
+  grid-area: tr-13;
+}
+.tr-14 {
+  grid-area: tr-14;
+}
+.tr-15 {
+  grid-area: tr-15;
+}
+.tr-16 {
+  grid-area: tr-16;
+}
+.tr-17 {
+  grid-area: tr-17;
+}
+.tr-18 {
+  grid-area: tr-18;
+}
+.tr-19 {
+  grid-area: tr-19;
+}
+.tr-20 {
+  grid-area: tr-20;
+}
+.tr-21 {
+  grid-area: tr-21;
+}
+.tr-22 {
+  grid-area: tr-22;
+}
+.tr-23 {
+  grid-area: tr-23;
+}
+.tr-24 {
+  grid-area: tr-24;
+}
+.tr-25 {
+  grid-area: tr-25;
+}
+.tr-1:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-10deg) rotateZ(0);
+}
+.tr-2:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-5deg) rotateZ(0);
+}
+.tr-3:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(0) rotateZ(0);
+}
+.tr-4:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(5deg) rotateZ(0);
+}
+.tr-5:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(10deg) rotateZ(0);
+}
+.tr-6:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0);
+}
+.tr-7:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-5deg) rotateZ(0);
+}
+.tr-8:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(0) rotateZ(0);
+}
+.tr-9:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(5deg) rotateZ(0);
+}
+.tr-10:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0);
+}
+.tr-11:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0) rotateY(-10deg) rotateZ(0);
+}
+.tr-12:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0) rotateY(-5deg) rotateZ(0);
+}
+.tr-13:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+}
+.tr-14:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0) rotateY(5deg) rotateZ(0);
+}
+.tr-15:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0) rotateY(10deg) rotateZ(0);
+}
+.tr-16:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0);
+}
+.tr-17:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0);
+}
+.tr-18:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(0) rotateZ(0);
+}
+.tr-19:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(5deg) rotateZ(0);
+}
+.tr-20:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0);
+}
+.tr-21:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0);
+}
+.tr-22:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0);
+}
+.tr-23:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(0) rotateZ(0);
+}
+.tr-24:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(5deg) rotateZ(0);
+}
+.tr-25:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(10deg) rotateZ(0);
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.education_card {
+  background: #fff;
+  box-shadow: 10px 20px 40px #bebebe, -20px -20px 50px #fff;
+  border-radius: 30px;
+}
+.btn_download {
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  padding-right: 1.25em;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border-radius: 2em;
+  font-size: 1rem;
+  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+  transition: transform 0.3s;
+  background-color: #00f;
+}
+.btn_download .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+.btn_download:hover {
+  border-color: #00f;
+}
+.btn_download:active {
+  transform: scale(0.98);
+  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
+.main {
+  position: relative;
+  max-height: 200px;
+}
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: solid gray 1px;
+  background: 0 0;
+  outline: 0;
+  padding: 10px;
+  transition: 0.2s;
+  color: #000;
+  font-size: 17px;
+}
+.input:focus,
+.input:valid {
+  border-color: #00f;
+}
+label span {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  pointer-events: none;
+  font-size: 18px;
+  color: #000;
+  opacity: 0;
+}
+.input:focus + label span,
+.input:valid + label span {
+  color: #00f;
+  top: -29px;
+  opacity: 100%;
+}
+.input:focus + label p,
+.input:valid + label p {
+  opacity: 0;
+}
+.wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  top: 350px;
+  z-index: 1;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #00f;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 0.5s alternate infinite ease;
+}
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #00f;
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 0.5s alternate infinite ease;
+}
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+@media screen and (max-width: 750px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}

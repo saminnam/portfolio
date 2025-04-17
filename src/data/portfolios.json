@@ -1,0 +1,208 @@
+{
+  "OwnPortfolios": [
+    {
+      "id": 1,
+      "title": "Flight-Booking",
+      "description": "Building an intuitive flight booking website with seamless booking, and responsive design for a smooth user experience.",
+      "image": "/assets/images/flight.png",
+      "tags": ["UI & UX", "REACT JS", "TAILWIND CSS"],
+      "link": "https://travel-lift.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 2,
+      "title": "Food-Order Website",
+      "description": "Developed a Food-Order website that allows users to browse products, add items to the cart, and view the cart. The cart page displays the individual prices of products along with the total amount for all items in the cart.",
+      "image": "/assets/images/food_order.png",
+      "tags": ["UI & UX", "REACT JS", "BOOTSTRAP"],
+      "link": "https://kaleidoscopic-sunburst-75d43c.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 3,
+      "title": "E-Commerce",
+      "description": "Developed an E-commerce website featuring product displays, accessible after user login. The platform provides a secure login system, allowing customers to view and purchase products once authenticated.",
+      "image": "/assets/images/e_commerce.png",
+      "tags": ["UI & UX", "REACT JS", "BOOTSTRAP"],
+      "link": "https://innam-e-commerce.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 4,
+      "title": "API Products List",
+      "description": "Built an e-commerce product list page with API-based products, featuring filters (range, category), smooth scrolling, animations, and an Add to Cart button. Includes toast notifications on adding products to the cart.",
+      "image": "/assets/images/api-filter.png",
+      "tags": ["UI & UX", "REACT JS", "TAILWIND CSS"],
+      "link": "https://e-commerce-productlist-api.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 5,
+      "title": "Info-Tech Website",
+      "description": "Developed a website for Innam Info Technologies to showcase its features, services, and portfolio, enabling efficient management of client projects.",
+      "image": "/assets/images/info.png",
+      "tags": ["UI & UX", "REACT JS", "BOOTSTRAP"],
+      "link": "https://inamtech.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 6,
+      "title": "API Products List (Beginner)",
+      "description": "Create an API Products List using the Fetch API to dynamically retrieve and display product data. This approach ensures real-time updates and seamless integration with external APIs for a responsive product list.",
+      "image": "/assets/images/api.png",
+      "tags": ["UI & UX", "REACT JS", "API"],
+      "link": "https://productlistapiproject.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 7,
+      "title": "Currency-Converter",
+      "description": "Build a dynamic Currency Converter using React.js and a reliable API for real-time exchange rates. This React-based app ensures quick and accurate currency conversions with up-to-date data.",
+      "image": "/assets/images/currency-converter.png",
+      "tags": ["UI & UX", "REACT JS", "API"],
+      "link": "https://saminnam.github.io/api-currency-converter/",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 8,
+      "title": "Calculator",
+      "description": "Develop a Calculator project using JavaScript to perform basic arithmetic operations. This interactive calculator offers a user-friendly interface with responsive design for smooth calculations.",
+      "image": "/assets/images/calculator.png",
+      "tags": ["UI & UX", "REACT JS", "RESPONSIVE"],
+      "link": "https://saminnam.github.io/calculator/",
+      "dataAos": "fade-up",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 9,
+      "title": "Clock",
+      "description": "Build a real-time clock project using JavaScript to display the current time dynamically. This digital clock updates every second and features a sleek, responsive design.",
+      "image": "/assets/images/clock.png",
+      "tags": ["UI & UX", "JAVASCRIPT", "RESPONSIVE"],
+      "link": "https://saminnam.github.io/simple-clock/",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 10,
+      "title": "Todo-List",
+      "description": "Developed a Todo List application with features to add new tasks, update existing tasks, and delete tasks, with real-time status updates and persistent data storage for seamless task management.",
+      "image": "/assets/images/todo.png",
+      "tags": ["UI & UX", "REACT JS", "RESPONSIVE"],
+      "link": "https://innam-todo.netlify.app",
+      "dataAos": "fade-up",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 11,
+      "title": "Newspaper Template",
+      "description": "Developed a newspaper template using HTML and CSS as a beginner project to showcase my strong skills in web layout and styling, demonstrating proficiency in both HTML structure and CSS design techniques.",
+      "image": "/assets/images/news.png",
+      "tags": ["DESIGN LAYOUT", "HTML", "CSS"],
+      "link": "https://saminnam.github.io/Newspaper/",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 12,
+      "title": "Form Validation",
+      "description": "Developed a user authentication project that includes both login and signup forms using HTML, CSS, and JavaScript. This beginner project allows users to register and access.",
+      "image": "/assets/images/form.png",
+      "tags": ["HTML", "CSS", "JAVASCRIPT"],
+      "link": "https://saminnam.github.io/form-validation/",
+      "dataAos": "fade-up",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 13,
+      "title": "Beginner LandingPage",
+      "description": "I have developed a beginner project using HTML and CSS with an appealing layout.",
+      "image": "/assets/images/webpage.png",
+      "tags": ["HTML", "CSS", "UI & UX"],
+      "link": "https://saminnam.github.io/beginner-website/",
+      "dataAos": "fade-up",
+      "aosDuration": "1000"
+    }
+  ],
+  "CompanyPortfolios": [
+    {
+      "id": 1,
+      "title": "Hostel Website",
+      "description": "Developed a website to display hostels with their locations and listed features. Users can book hostel rooms through the booking form provided. (Currently under development process)",
+      "image": "/assets/images/hostel.png",
+      "tags": ["UI & UX", "REACT JS", "BOOTSTRAP"],
+      "link": "https://www.brindhavanamhostels.com/",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 2,
+      "title": "Keyan Technologies",
+      "description": "Developed a website for Keyan Technologies to showcase its features, services, and portfolio, enabling efficient management of client projects. (Currently under development process)",
+      "image": "/assets/images/keyan.png",
+      "tags": ["UI & UX", "REACT JS", "TAILWIND CSS"],
+      "link": "https://www.keyantechnologies.com/",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 3,
+      "title": "Hostel Dashboard",
+      "description": "The Hostel Management Dashboard is a web-based application designed for administrators to manage room details, track availability, and oversee user bookings. (Only Admin can access)",
+      "image": "/assets/images/hostel-dashboard.png",
+      "tags": ["UI & UX", "REACT JS", "TAILWIND CSS"],
+      "link": "https://admin-access-hostel.netlify.app/login/",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 4,
+      "title": "Keyan Technologies Dashboard",
+      "description": "The Keyan Technologies Dashboard is a dynamic admin panel that allows seamless management of website content (Only Admin can access)",
+      "image": "/assets/images/keyan-dashboard.png",
+      "tags": ["UI & UX", "REACT JS", "TAILWIND CSS"],
+      "link": "keyan-dashboard.netlify.app",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 5,
+      "title": "Royal Civil Tech",
+      "description": "The Royal Civil Tech website is a construction-focused platform designed to generate leads, showcase projects, and enhance brand visibility.",
+      "image": "/assets/images/royal.png",
+      "tags": ["UI & UX", "REACT JS", "BOOTSTRAP"],
+      "link": "https://royalciviltech.com/",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 6,
+      "title": "Eshwar Construction",
+      "description": "The Eshwar Construction website is a construction-focused platform designed to generate leads, showcase projects, and enhance brand visibility.",
+      "image": "/assets/images/eshwar.png",
+      "tags": ["UI & UX", "REACT JS", "TAILWIND CSS"],
+      "link": "https://eshwarconstruction.in/",
+      "aosDuration": "2000"
+    },
+    {
+      "id": 7,
+      "title": "Janav Housing",
+      "description": "The Janav Housing website is a construction-focused platform designed to generate leads, showcase projects, and enhance brand visibility.",
+      "image": "/assets/images/janav.png",
+      "tags": ["UI & UX", "REACT JS", "BOOTSTRAP"],
+      "link": "",
+      "aosDuration": "1000"
+    },
+    {
+      "id": 8,
+      "title": "Ocean-Housing Landing Page",
+      "description": "The Ocean Housing is a construction-focused landing page designed to generate leads.",
+      "image": "/assets/images/ocean-land-pg.png",
+      "tags": ["UI & UX", "HTML", "TAILWIND CSS"],
+      "link": "https://ocean-landpg.netlify.app/",
+      "aosDuration": "2000"
+    }
+  ]
+}

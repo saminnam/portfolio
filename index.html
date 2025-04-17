@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/innamImg.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innam's Portfolio</title>
+  <script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+  <script>
+    const cursorDot = document.querySelector("[data-cursor-dot]");
+    const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+    window.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
+
+      // cursorOutline.style.left = `${posX}px`;
+      // cursorOutline.style.top = `${posY}px`;
+
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+
+      }, { duration: 1500, fill: "forwards" })
+      cursorDot.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+
+      }, { duration: 500, fill: "forwards" })
+    })
+  </script>
+  <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "1Pb40qkFTD_yygKts",
+        });
+      })();
+  </script>
+</body>
+
+</html>
